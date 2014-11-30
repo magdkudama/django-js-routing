@@ -1,0 +1,15 @@
+{
+  "name": "django-js-routing",
+  "version": "0.0.0",
+  "description": "Django Javascript routing library",
+  "author": "Magd Kudama <magdkudama@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "minify": "^1.3.3",
+    "mocha": "^2.0.1",
+    "chai": "^1.10.0"
+  },
+  "scripts": {
+    "prepublish": "minify Router.js > ../static/django_js_routing/router.min.js"
+  }
+}
