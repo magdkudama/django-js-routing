@@ -3,15 +3,18 @@ import os
 from setuptools import setup
 
 
-readme_content = open(
-    os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), 'README.md'
-    )
-).read()
+try:
+    readme_content = open(
+        os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), 'README.md'
+        )
+    ).read()
+except IOError:
+    readme_content = ''
 
 setup(
     name='django-js-routing',
-    version='1.0.2',
+    version='1.0.3',
     url='https://github.com/magdkudama/django-js-routing',
     author='Magd Kudama',
     author_email='magdkudama@gmail.com',
