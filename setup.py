@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='django-js-routing',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/magdkudama/django-js-routing',
     author='Magd Kudama',
     author_email='magdkudama@gmail.com',
