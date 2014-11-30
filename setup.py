@@ -7,7 +7,8 @@ setup(
     author='Magd Kudama',
     author_email='magdkudama@gmail.com',
     license='MIT',
-    packages=['django', 'routing', 'js'],
+    keywords=['django', 'routing', 'js'],
+    packages=['django_js_routing'],
     include_package_data=True,
     description='Expose your Django routes to JavaScript',
     classifiers=[
