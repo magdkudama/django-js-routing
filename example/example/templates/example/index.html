@@ -1,0 +1,8 @@
+{% load staticfiles %}
+<script src="{% static 'django_js_routing/router.min.js' %}"></script>
+<script src="{% url 'django_js_routing:routes' %}"></script>
+<script>
+    var url = DjangoUrl.reverse('index'); // /index/
+    url = DjangoUrl.reverse('details', {id : 12}); // /12/details/
+    url = DjangoUrl.reverse('details', {id : 12, more: 'data'}); // /12/details/?more=data
+</script>
